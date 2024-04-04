@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+}
+.nav-container{
+    background-color: #878BF5;
+}
+.logo{
+    display: flex;
+}
+.social i{
+    width: 50px;
+    font-size: 36px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF9900;
+    height: 10vh;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 10vw;
+    
+}
+.menu-item:hover{
+    background-color: #ffb648;
+}
+
+.burguer{
+    height: 50vh;
+    background:url(./assets/image1.jpeg); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.my-btn{
+    background-color: #FF9900;
+    border: 3px solid black;
+
+    padding: 10px, 20px;
+
+    font-family: 'Inter', sans-serif;
+}
+.btn-banner{
+    margin-bottom: 10vh;
+    padding: 10px 20px;
+    border-radius: 100%;
+}
+
+.sobre{
+    min-height: 30vh;
+    padding: 30px;
+    background-color: #878BF5;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    background-color: #FCE7A8;
+}
+
+.card{
+    background-color: #B6B1D7;
+    margin-bottom: 1rem;
+}
+.sobrenos{
+    margin: 2rem;
+    background-color: #B6B1D7;
+    font-size: 36px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}

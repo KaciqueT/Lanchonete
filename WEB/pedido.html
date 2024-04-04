@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XXXBurguer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="container-fluid nav-container">
+          <a class="navbar-brand" href="index.html">
+            <div class="logo">
+              <h1>XXXBurguer</h1>
+              <img src="assets/favicon.png" alt="burger" />
+            </div>
+          </a>
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+        <aside class="menu">
+          <a href="cardapio.html"><div class="menu-item">Cardápio</div></a>
+          <a href="pedido.html"><div class="menu-item">Pedido</div></a>
+          <a href="endereco.html"><div class="menu-item">Endereço</div></a>
+          <a href="contato.html"><div class="menu-item">Contatos</div></a>
+          <a href="informacoes.html"
+            ><div class="menu-item">Informações</div></a
+          >
+        </aside>
+      </nav>
+      <section class="container">
+        <h1>Pedidos</h1>
+        <form action="http://127.0.0.1:3000/pedido/" method="post" onsubmit="validaForm(event, this);">
+          <label for="nome" class="form-label">Nome:</label>
+          <input
+            class="form-control"
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="José da Esquina"
+          />
+
+          <label for="endereco" class="form-label">Endereço:</label>
+          <input
+            class="form-control"
+            type="text"
+            name="endereco"
+            id="endereco"
+            placeholder="Rua dos tolos, nº0, Vila Batista, esquina"
+          />
+
+          <label for="celular" class="form-label"
+            >Celular: <span id="cel"></span
+          ></label>
+          <input
+            class="form-control"
+            type="text"
+            name="celular"
+            id="celular"
+          />
+
+          <label for="pedido" class="form-label">Pedido:</label>
+          <textarea
+            class="form-control"
+            name="pedido"
+            id="pedido"
+            placeholder="1 X-Salada,1 refrigerante zero,..."
+          ></textarea>
+
+            <button type="reset" class="btn btn-danger">
+                Limpar
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Enviar
+              </button>
+            
+        </form>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/75fa9d8e9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
